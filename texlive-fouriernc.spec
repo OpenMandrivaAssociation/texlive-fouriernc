@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/fouriernc
+# catalog-date 2008-08-19 20:38:14 +0200
+# catalog-license lppl
+# catalog-version 1.0
 Name:		texlive-fouriernc
 Version:	1.0
 Release:	1
@@ -81,6 +87,7 @@ to have the Fourier-GUTenberg fonts installed.
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/unsetpar.mtx
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/zrmhax.mtx
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/zrykernx.mtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -91,3 +98,5 @@ to have the Fourier-GUTenberg fonts installed.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
