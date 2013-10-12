@@ -1,12 +1,12 @@
-# revision 15878
+# revision 29646
 # category Package
 # catalog-ctan /fonts/fouriernc
-# catalog-date 2008-08-19 20:38:14 +0200
+# catalog-date 2013-04-03 16:06:16 +0200
 # catalog-license lppl
-# catalog-version 1.0
+# catalog-version undef
 Name:		texlive-fouriernc
-Version:	1.0
-Release:	2
+Version:	20130403
+Release:	1
 Summary:	Use New Century Schoolbook text with Fourier maths fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fouriernc
@@ -39,10 +39,6 @@ to have the Fourier-GUTenberg fonts installed.
 %{_texmfdistdir}/fonts/afm/public/fouriernc/fourier-mlit.afm
 %{_texmfdistdir}/fonts/afm/public/fouriernc/fourier-mlitb.afm
 %{_texmfdistdir}/fonts/afm/public/fouriernc/fourier-ms.afm
-%{_texmfdistdir}/fonts/afm/public/fouriernc/pncb8a.afm
-%{_texmfdistdir}/fonts/afm/public/fouriernc/pncbi8a.afm
-%{_texmfdistdir}/fonts/afm/public/fouriernc/pncr8a.afm
-%{_texmfdistdir}/fonts/afm/public/fouriernc/pncri8a.afm
 %{_texmfdistdir}/fonts/tfm/public/fouriernc/fncmi.tfm
 %{_texmfdistdir}/fonts/tfm/public/fouriernc/fncmib.tfm
 %{_texmfdistdir}/fonts/tfm/public/fouriernc/fncmii.tfm
@@ -68,6 +64,7 @@ to have the Fourier-GUTenberg fonts installed.
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/setxheight.mtx
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/specialkernings.mtx
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/specialkerningsital.mtx
+%doc %{_texmfdistdir}/doc/fonts/fouriernc/substitutes.zip
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/test_fouriernc.pdf
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/unset0.mtx
 %doc %{_texmfdistdir}/doc/fonts/fouriernc/unset0A.mtx
@@ -88,17 +85,3 @@ to have the Fourier-GUTenberg fonts installed.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 752088
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 718498
-- texlive-fouriernc
-- texlive-fouriernc
-- texlive-fouriernc
-- texlive-fouriernc
-
