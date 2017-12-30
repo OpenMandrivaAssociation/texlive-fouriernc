@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-fouriernc
-Version:	20130403
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	Use New Century Schoolbook text with Fourier maths fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fouriernc
