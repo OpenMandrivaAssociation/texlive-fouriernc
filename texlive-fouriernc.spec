@@ -1,18 +1,12 @@
-# revision 29646
-# category Package
-# catalog-ctan /fonts/fouriernc
-# catalog-date 2013-04-03 16:06:16 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-fouriernc
-Version:	20190228
+Version:	29646
 Release:	1
 Summary:	Use New Century Schoolbook text with Fourier maths fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fouriernc
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fouriernc.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fouriernc.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fouriernc.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fouriernc.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ with New Century Schoolbook text. In order to use it you need
 to have the Fourier-GUTenberg fonts installed.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -78,7 +72,7 @@ to have the Fourier-GUTenberg fonts installed.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
