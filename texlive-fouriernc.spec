@@ -1,6 +1,6 @@
 Name:		texlive-fouriernc
 Version:	29646
-Release:	1
+Release:	2
 Summary:	Use New Century Schoolbook text with Fourier maths fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/fouriernc
