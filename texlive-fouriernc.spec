@@ -3,7 +3,7 @@ Version:	29646
 Release:	2
 Summary:	Use New Century Schoolbook text with Fourier maths fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/fouriernc
+URL:		https://www.ctan.org/tex-archive/fonts/fouriernc
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fouriernc.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fouriernc.doc.r%{version}.tar.xz
